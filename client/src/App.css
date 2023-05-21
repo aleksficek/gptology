@@ -1,38 +1,74 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  height: 100%;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background: linear-gradient(90deg, rgba(44,62,80,1) 0%, rgba(52,152,219,1) 100%);
+  min-height: 100%;
   color: white;
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+/* ... rest of your CSS ... */
+
+
+.App-header {
+  width: 80%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.commandments {
+  background: rgba(236, 240, 241,0.8);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  color: #2c3e50;
+}
+
+.scrollable {
+  height: 200px;
+  overflow-y: scroll;
+}
+
+.chat {
+  margin: 20px 0;
+}
+
+.chat input {
+  margin-top: 10px;
+  padding: 10px;
+  width: 50%;
+}
+
+.chat button {
+  margin-left: 10px;
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chat button:hover {
+  background-color: #2980b9;
+}
+
+.chatlog {
+  margin-top: 20px;
+  background: rgba(236, 240, 241,0.8);
+  border-radius: 10px;
+  padding: 20px;
+  height: 200px;
+  overflow-y: scroll;
+  color: #2c3e50;
 }
