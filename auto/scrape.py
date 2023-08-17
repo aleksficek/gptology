@@ -121,7 +121,7 @@ print(file_contents)
 prompt = "Here is the code for a python file I am working on. Please add a simple feature to it and return me the code for the file. The code should compile and run in its entirety. Please include all of the code a <start> and an <end> tokens: "
 input_text = format_prompt(python_files, file_contents, prompt)
 
-response = call_openai(input_text, False, "/Users/aficek/software/gptology/openai_outputs/output_2.txt")
+response = call_openai(input_text, True, "/Users/aficek/software/gptology/openai_outputs/output_2.txt")
 
 user_input = "something"
 while user_input != "":
@@ -134,3 +134,4 @@ while user_input != "":
 # print(response)
 
 # write_file(file_contents, response, repository_path + "/simple_test.py", prompt)
+
